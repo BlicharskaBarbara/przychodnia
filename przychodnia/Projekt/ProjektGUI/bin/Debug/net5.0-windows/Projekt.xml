@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Projekt</name>
+    </assembly>
+    <members>
+        <member name="F:Projekt.Lekarz.specjalizacje">
+            <summary>
+            tworzenie pól zawierających listy 
+            </summary>
+        </member>
+        <member name="P:Projekt.Lekarz.Specjalizacje">
+            <summary>
+            tworzenie właściwości dla utworzonych pól
+            </summary>
+        </member>
+        <member name="M:Projekt.Lekarz.#ctor">
+            <summary>
+            tworzenie konstruktorów nieparametrycznych i parametrycznych
+            </summary>
+        </member>
+        <member name="M:Projekt.Lekarz.DodajSpecjalizacje(Projekt.EnumSpecjalizacja)">
+            <summary>
+            Metoda umożliwiająca dodanie specjalizacji do listy specjalizacji danego lekarza
+            </summary>
+            <param name="s">specjalizacja, którą chcemy dodać dla lekarza</param>
+        </member>
+        <member name="M:Projekt.Lekarz.DodajWizyte(System.DateTime,Projekt.Pacjent)">
+            <summary>
+            Metoda umożliwiająca dodanie wizyty do terminarza lekarza
+            </summary>
+            <param name="termin">termin wizyty, którą chcemy dodać</param>
+            <param name="pacjent">pacjent, którego wizytę chcemy dodać</param>
+        </member>
+        <member name="M:Projekt.Lekarz.PodajWolneTerminy">
+            <summary>
+            Metoda umożliwiająca dodanie wolnych terminów dla lekarza
+            </summary>
+            <returns>Listę wolnych terminów lekarza</returns>
+        </member>
+        <member name="M:Projekt.Lekarz.ToString">
+            <summary>
+            Metoda ToString() umożliwiająca wypisanie danych lekarza do konsoli
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Projekt.Osoba.imie">
+            <summary>
+            Utworzenie pól klasy
+            </summary>
+        </member>
+        <member name="P:Projekt.Osoba.Imie">
+            <summary>
+            Utworzenie właściwości dla pól klasy
+            </summary>
+        </member>
+        <member name="M:Projekt.Osoba.#ctor">
+            <summary>
+            Stworzenie konstruktorów nieparametrycznych i parametrycznych
+            </summary>
+        </member>
+        <member name="M:Projekt.Osoba.Formatuj(System.String)">
+            <summary>
+            Metoda umożliwiająca formatowanie tsktu(pierwszy znak jest dużą literą)
+            </summary>
+            <param name="text">tekst, który chcemy sformatować</param>
+            <returns></returns>
+        </member>
+        <member name="M:Projekt.Osoba.ToString">
+            <summary>
+            Metoda ToString() umożliwiająca wypisanie danych osoby w konsoli
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Projekt.Osoba.Equals(Projekt.Osoba)">
+            <summary>
+            Metoda porównująca osoby na podstawie peselu
+            </summary>
+            <param name="other">Osoba, do której chcemy porównać osobę</param>
+            <returns>true, jeżeli pesel osoby wskazanej jest taki sam</returns>
+        </member>
+        <member name="F:Projekt.Pacjent.dataUrodzenia">
+            <summary>
+            pole daty urodzenia
+            </summary>
+            
+        </member>
+        <member name="P:Projekt.Pacjent.DataUrodzenia">
+            <summary>
+            właściwość dla pola dataUrodzenia
+            </summary>
+        </member>
+        <member name="M:Projekt.Pacjent.#ctor">
+            <summary>
+            konstruktory nieparametryczne i parametryczne
+            </summary>
+        </member>
+        <member name="M:Projekt.Pacjent.WiekPacjenta">
+            <summary>
+            Metoda umożliwiająca obliczenie wieku pacjenta
+            </summary>
+            <returns>wiek pacjenta</returns>
+        </member>
+        <member name="M:Projekt.Pacjent.ToString">
+            <summary>
+            Metoda ToString() wypisująca dane pacjenta na konsolę
+            </summary>
+            <returns>string zawierający dane pacjenta</returns>
+        </member>
+        <member name="M:Projekt.Pacjent.CompareTo(Projekt.Pacjent)">
+            <summary>
+            Metoda porównująca pacjentów
+            </summary>
+            <param name="other">Pacjent z którym porówujemy</param>
+            <returns></returns>
+        </member>
+        <member name="F:Projekt.Przychodnia.lekarze">
+            <summary>
+            utowrzenie list zawierających wszystkich lekarzy w przychodni oraz wszystkich pacjentów
+            </summary>
+        </member>
+        <member name="P:Projekt.Przychodnia.Pacjenci">
+            <summary>
+            utowrzenie właściwości do pól
+            </summary>
+        </member>
+        <member name="M:Projekt.Przychodnia.#ctor">
+            <summary>
+            konstruktor nieparametryczny, w którym inicjalizujemy nasze listy
+            </summary>
+        </member>
+        <member name="M:Projekt.Przychodnia.DodajPacjenta(Projekt.Pacjent)">
+            <summary>
+            metoda dodająca pacjenta do listy pacjentów
+            </summary>
+            <param name="pacjent">pacjent,który ma być dodany do listy pacjentów</param>
+        </member>
+        <member name="M:Projekt.Przychodnia.DodajLekarza(Projekt.Lekarz)">
+            <summary>
+            metoda dodająca lekarza do listy lekarzy
+            </summary>
+            <param name="lekarz">lekarz, który ma być dodany do listy lekarzy</param>
+        </member>
+        <member name="M:Projekt.Przychodnia.JestPacjentem(System.String)">
+            <summary>
+            Metoda sprawdzająca czy osoba o danym peselu jest pacjentem zarejestrowanym w naszej przychodni
+            </summary>
+            <param name="PESEL">pesel, na podstawie którego sprawdzamy czy dana osoba jest pacjentem naszej przychodni</param>
+            <returns>true, jeżeli osoba o danym numerze pesel jest pacjentem w naszej przychodni</returns>
+        </member>
+        <member name="M:Projekt.Przychodnia.JestPacjentem(Projekt.Pacjent)">
+            <summary>
+            Metoda sprawdzająca czy dana osoba jest pacjentem w naszej przychodni
+            </summary>
+            <param name="pacjent">Pacjent, którego obecność sprawdzamy w naszej przychodni</param>
+            <returns>true, jeżeli wskazany pacjent jest na liście pacjentów naszej przychodni</returns>
+        </member>
+        <member name="M:Projekt.Przychodnia.UsunPacjenta(System.String)">
+            <summary>
+            Metoda usuwająca pacjenta o danym numerze pesel z listy pacjentow
+            </summary>
+            <param name="PESEL">Pesel, na podstawie którego wyszukujemy osobę do usunięcia</param>
+        </member>
+        <member name="M:Projekt.Przychodnia.WyszukajPacjenta(System.String)">
+            <summary>
+            Metoda wyszukująca pacjenta po numerze pesel
+            </summary>
+            <param name="pesel">Pesel pacjenta służący do identyfikacji osoby, którą chcemy wyszukać</param>
+            <returns>Pacjenta o podanym numerze pesel</returns>
+        </member>
+        <member name="M:Projekt.Przychodnia.Sortuj">
+            <summary>
+            Metoda sortująca pacjentów 
+            </summary>
+        </member>
+        <member name="M:Projekt.Przychodnia.WyswietlWizyty(Projekt.Pacjent)">
+            <summary>
+            Metoda wyświetlająca wizyty danego pacjenta
+            </summary>
+            <param name="p">Pacjent, którego wizyty chcemy wyświetlić</param>
+            <returns>Listę wizyt wskazanego pacjenta</returns>
+        </member>
+        <member name="M:Projekt.Przychodnia.ZrezygnujzWizyty(Projekt.Wizyta)">
+            <summary>
+            Metoda umożliwiająca rezygnacje z wizyty
+            </summary>
+            <param name="w">wizyta, z której użytkownik chce zrezygnować</param>
+        </member>
+        <member name="M:Projekt.Przychodnia.ToString">
+            <summary>
+            metoda ToString() wypisująca do konsoli lekarzy zawartych w liscie lekarzy i pacjentów z listy pacjentów
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Projekt.Przychodnia.ZapiszXML(System.String)">
+            <summary>
+            Metoda serializująca przychodnię do XML
+            </summary>
+            <param name="nazwaPliku">nazwa pliku, do którego chcemy zapisać dane z serializacji</param>
+        </member>
+        <member name="M:Projekt.Przychodnia.OdczytXML(System.String)">
+            <summary>
+            Metoda odczytująca przychodnię z pliku XML
+            </summary>
+            <param name="nazwaPliku">nazwa pliku, który chcemy odczytać</param>
+            <returns>obiekt klasy Przychodnia odczytany z pliku</returns>
+        </member>
+        <member name="P:Projekt.Wizyta.Data">
+            <summary>
+            utworzenie właściwości dla pól klasy Wizyta
+            </summary>
+        </member>
+        <member name="M:Projekt.Wizyta.#ctor">
+            <summary>
+            utowrzenie konstruktorów: parametrycznego i nieparametrycznego
+            </summary>
+        </member>
+        <member name="M:Projekt.Wizyta.ToString">
+            <summary>
+            metoda ToString() utowrzona dla klasy  Wizyta
+            </summary>
+            <returns>data wizyty oraz pacjenta, do którego należy wizyta</returns>
+        </member>
+    </members>
+</doc>

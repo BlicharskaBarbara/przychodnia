@@ -1,0 +1,15 @@
+C:\Users\HP450_3G\Desktop\Projekt\Projekt\Projekt\obj\Debug\Projekt.csproj.AssemblyReference.cache
+C:\Users\HP450_3G\Desktop\Projekt\Projekt\Projekt\obj\Debug\Projekt.csproj.CoreCompileInputs.cache
+C:\Users\HP450_3G\Desktop\Projekt\Projekt\Projekt\bin\Debug\Projekt.exe.config
+C:\Users\HP450_3G\Desktop\Projekt\Projekt\Projekt\bin\Debug\Projekt.exe
+C:\Users\HP450_3G\Desktop\Projekt\Projekt\Projekt\bin\Debug\Projekt.pdb
+C:\Users\HP450_3G\Desktop\Projekt\Projekt\Projekt\obj\Debug\Projekt.exe
+C:\Users\HP450_3G\Desktop\Projekt\Projekt\Projekt\obj\Debug\Projekt.pdb
+C:\Users\Rafał\Desktop\projekt\Projekt\Projekt\bin\Debug\Projekt.exe.config
+C:\Users\Rafał\Desktop\projekt\Projekt\Projekt\bin\Debug\Projekt.exe
+C:\Users\Rafał\Desktop\projekt\Projekt\Projekt\bin\Debug\Projekt.pdb
+C:\Users\Rafał\Desktop\projekt\Projekt\Projekt\obj\Debug\Projekt.csprojAssemblyReference.cache
+C:\Users\Rafał\Desktop\projekt\Projekt\Projekt\obj\Debug\Projekt.csproj.CoreCompileInputs.cache
+C:\Users\Rafał\Desktop\projekt\Projekt\Projekt\obj\Debug\Projekt.exe
+C:\Users\Rafał\Desktop\projekt\Projekt\Projekt\obj\Debug\Projekt.pdb
+C:\Users\Rafał\Desktop\projekt\Projekt\Projekt\bin\Debug\Projekt.xml

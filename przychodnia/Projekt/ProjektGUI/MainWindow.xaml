@@ -1,0 +1,61 @@
+﻿<Window x:Class="ProjektGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektGUI"
+        mc:Ignorable="d"
+        Title="Przychodnia" Height="504" Width="1200">
+    <Grid Margin="0,0,0,-6" Background="#FFDAE9">
+        <DockPanel Grid.ColumnSpan="3">
+            <Menu DockPanel.Dock="Top" FontSize="14px">
+                <MenuItem Header="_Plik">
+                    <MenuItem x:Name="menuOtworz" Header="_Otwórz" Click="MenuOtworz_Click"/>
+                    <MenuItem x:Name="menuWyjdz" Header="_Wyjdź" Click="MenuWyjdz_Click"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
+        <ListView x:Name ="listViewLekarz" Margin="0,60,0,0" SelectionChanged="listViewLekarz_SelectionChanged" Width="250" Height="300" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name ="listViewTerminy"  Margin="270,60,0,0" Width="250" Height="300" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView x:Name ="listViewPacjent" Margin="540,60,0,0" SelectionChanged="listViewLekarz_SelectionChanged" Width="457" Height="130" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label x:Name="lblLekarze" Content="Lekarze" HorizontalAlignment="Left" Margin="75,20,0,0" VerticalAlignment="Top" Height="30" Width="100" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="lblTerminy" Content="Wolne Terminy" HorizontalAlignment="Left" Margin="345,20,0,0" VerticalAlignment="Top" Height="30" Width="100" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Label x:Name="lblDanePacjenta" Content="Dane Pacjenta" HorizontalAlignment="Left" Margin="687,25,0,0" VerticalAlignment="Top" Height="30" Width="100" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Button x:Name="btnDodajWizyte" Content="Dodaj wizytę" HorizontalAlignment="Left" Height="56" Margin="166,396,0,0" VerticalAlignment="Top" Width="175" Click="btnDodajWizyte_Click" Background="	#FFB3DE" FontWeight="Bold"/>
+        <Button x:Name="btnWyswietl" Content="Wyświetl swoje wizyty" HorizontalAlignment="Left" Height="40" Margin="1005,60,0,0" VerticalAlignment="Top" Width="125" Click="btnWyswietl_Click" Background="	#FFB3DE" FontWeight="Bold" />
+        <ListView x:Name="lstWizyty" HorizontalAlignment="Left" Height="113" Margin="540,247,0,0" VerticalAlignment="Top" Width="457">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnSortuj" Content="Sortuj" HorizontalAlignment="Left" Height="40" Margin="1005,105,0,0" VerticalAlignment="Top" Width="125" Click="btnSortuj_Click" Background="	#FFB3DE" FontWeight="Bold"/>
+        <Button x:Name="btnZrezygnuj" Content="Zrezygnuj z wizyty" HorizontalAlignment="Left" Height="40" Margin="1005,150,0,0" VerticalAlignment="Top" Width="125" Click="btnZrezygnuj_Click" Background="	#FFB3DE" FontWeight="Bold"/>
+        <Button x:Name="btnUsunPacjenta" Content="Usuń pacjenta z bazy" HorizontalAlignment="Left" Height="40" Margin="1005,196,0,0" VerticalAlignment="Top" Width="125" Click="UsunPacjenta_Click" Background="	#FFB3DE" FontWeight="Bold"/>
+        <Label x:Name="lblTwojeWizyty" Content="Twoje wizyty" HorizontalAlignment="Left" Height="26" Margin="702,210,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold"/>
+        <Button x:Name="Dodaj" Content="Dodaj swoje dane" HorizontalAlignment="Left" Height="40" Margin="1005,241,0,0" VerticalAlignment="Top" Width="125" Click="Dodaj_Click" Background="	#FFB3DE" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
